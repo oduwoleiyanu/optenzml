@@ -1,0 +1,6 @@
+Enzyme_ID,Enzyme_Name,Organism_Info,Organism_Type,Sequence_Length,Thermophilic_Ratio,Psychrophilic_Ratio,BRENDA_RF_Temp,BRENDA_SVR_Temp,Seq2Topt_Temp,Tomer_Temp,Consensus_Temp,Classification,Full_Header
+SAMPLE_001,sp|P00698|LYSC_CHICK Lysozyme C,Chicken (body temp ~41°C),Mesophilic,147,0.0,0.0,43.4,36.1,39.8,43.2,40.5,Moderate,sp|P00698|LYSC_CHICK Lysozyme C - Gallus gallus (Chicken)
+SAMPLE_002,sp|P62593|CALM_HUMAN Calmodulin,Human (body temp ~37°C),Mesophilic,149,0.0,0.0,41.4,40.7,41.6,23.7,38.6,Mesophilic,sp|P62593|CALM_HUMAN Calmodulin - Homo sapiens (Human)
+SAMPLE_003,sp|P00761|TRYP_PIG Trypsin,Pig (body temp ~39°C),Mesophilic,223,0.0,0.0,37.4,36.9,34.0,38.2,36.7,Mesophilic,sp|P00761|TRYP_PIG Trypsin - Sus scrofa (Pig)
+SAMPLE_004,sp|P00722|BGAL_ECOLI Beta-galactosidase,E. coli (optimal ~37°C),Mesophilic,1024,0.0,0.0,40.2,37.2,45.6,18.2,37.1,Mesophilic,sp|P00722|BGAL_ECOLI Beta-galactosidase - Escherichia coli
+SAMPLE_005,sp|P00805|CATA_BOVIN Catalase,Bovine (body temp ~39°C),Mesophilic,8267,0.0,0.0,43.9,42.1,33.1,45.9,41.5,Moderate,sp|P00805|CATA_BOVIN Catalase - Bos taurus (Bovine)
