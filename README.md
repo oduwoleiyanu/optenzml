@@ -210,5 +210,4 @@ optenzml/
 - Standard libraries: csv, random, datetime, os, sys
 
 ## License
-
-This project is part of the EMSL Summer School AI coding demonstration.
+Academic Free License v3.0
