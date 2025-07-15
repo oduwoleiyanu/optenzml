@@ -1,0 +1,6 @@
+Enzyme_ID,Enzyme_Name,Expected_Type,Sequence_Length,Thermophilic_Ratio,Psychrophilic_Ratio,BRENDA_RF_Temp,BRENDA_SVR_Temp,Seq2Topt_Temp,Tomer_Temp,Consensus_Temp,Predicted_Classification,Full_Header
+REAL_001,sp|P0A6Y8|DNAK_ECOLI Chaperone protein DnaK,Mesophilic,426,0,0,43.0,26.2,36.7,43.3,36.7,Mesophilic,sp|P0A6Y8|DNAK_ECOLI Chaperone protein DnaK - Escherichia coli (Mesophilic)
+REAL_002,sp|Q9KQH0|AMYA_COLPS Alpha-amylase,Psychrophilic,414,0,0,20.2,19.5,20.4,5.0,17.8,Mesophilic,sp|Q9KQH0|AMYA_COLPS Alpha-amylase - Colwellia psychrerythraea (Psychrophilic)
+REAL_003,sp|Q8ZRK2|PROT_SHEFR Cold-active protease,Psychrophilic,417,0,0,13.3,12.9,16.0,16.7,14.2,Mesophilic,sp|Q8ZRK2|PROT_SHEFR Cold-active protease - Shewanella frigidimarina (Psychrophilic)
+REAL_004,sp|P61889|MALZ_THEMA Maltooligosyltrehalose synthase,Thermophilic,417,0,0,76.3,69.3,92.4,42.8,72.4,Thermophilic,sp|P61889|MALZ_THEMA Maltooligosyltrehalose synthase - Thermus aquaticus (Thermophilic)
+REAL_005,sp|P27693|EFTU_THETH Elongation factor Tu,Thermophilic,419,0,0,84.2,80.3,66.2,88.4,80.1,Hyperthermophilic,sp|P27693|EFTU_THETH Elongation factor Tu - Thermus thermophilus (Thermophilic)
