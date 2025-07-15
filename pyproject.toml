@@ -1,0 +1,132 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "optenzml"
+version = "1.0.0"
+description = "A Python tool for predicting optimal temperature of enzymes using machine learning consensus"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "EMSL Summer School", email = "contact@example.com"},
+]
+maintainers = [
+    {name = "EMSL Summer School", email = "contact@example.com"},
+]
+keywords = ["bioinformatics", "enzyme", "temperature", "prediction", "machine-learning", "consensus"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "scikit-learn>=1.0.0",
+    "pandas>=1.3.0",
+    "numpy>=1.21.0",
+    "biopython>=1.79",
+    "joblib>=1.0.0",
+    "requests>=2.25.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov>=2.0",
+    "black>=21.0",
+    "flake8>=3.8",
+    "mypy>=0.800",
+]
+docs = [
+    "sphinx>=4.0",
+    "sphinx-rtd-theme>=1.0",
+]
+viz = [
+    "matplotlib>=3.3.0",
+    "seaborn>=0.11.0",
+]
+
+[project.scripts]
+optenzml = "optenzml.cli.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/emsl/optenzml"
+Documentation = "https://optenzml.readthedocs.io/"
+Repository = "https://github.com/emsl/optenzml.git"
+"Bug Tracker" = "https://github.com/emsl/optenzml/issues"
+
+[tool.setuptools]
+packages = ["optenzml", "optenzml.predictors", "optenzml.consensus", "optenzml.utils", "optenzml.cli"]
+
+[tool.setuptools.package-data]
+optenzml = ["*.txt", "*.json", "*.yaml", "*.yml", "data/*.csv", "data/models/*.pkl"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 88
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --strict-markers --strict-config"
+testpaths = [
+    "tests",
+]
+python_files = [
+    "test_*.py",
+    "*_test.py",
+]
+python_classes = [
+    "Test*",
+]
+python_functions = [
+    "test_*",
+]
+
+[tool.coverage.run]
+source = ["optenzml"]
+omit = [
+    "*/tests/*",
+    "*/test_*",
+    "setup.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+]
