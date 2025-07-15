@@ -133,7 +133,7 @@ Results saved to: /path/to/optenzml/results/optenzml_predictions.csv
 |--------|---------------|----------------|----------------|
 | DnaK (E. coli) | Mesophilic | 36.7°C | Mesophilic |
 | Alpha-amylase (Colwellia) | Psychrophilic | 17.8°C | Mesophilic |
-| Cold protease (Shewanella) | Psychrophilic | 14.2°C | Mesophilic |
+| Cold protease (Shewanella) | Psychrophilic | 14.2°C | Psychrophilic |
 | Synthase (Thermus) | Thermophilic | 72.4°C | Thermophilic |
 | EF-Tu (Thermus) | Thermophilic | 80.1°C | Hyperthermophilic |
 
