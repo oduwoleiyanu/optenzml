@@ -191,10 +191,10 @@ def classify_temperature(temp):
     """Classify enzyme based on optimal temperature."""
     if temp is None:
         return "Unknown"
-    elif temp < 40:
+    elif temp < 20:
+        return "Psychrophilic"
+    elif temp < 45:
         return "Mesophilic"
-    elif temp < 60:
-        return "Moderate"
     elif temp < 80:
         return "Thermophilic"
     else:
